@@ -16,6 +16,9 @@ $('.submit-btn').click((e) => {
   let id = $('.id-input').val();
   let pw = $('.pw-input').val();
 
+  console.log(id, pw.length);
+  console.log(typeof id);
+
   let getItem = localStorage.getItem('user');
   getItem = JSON.parse(getItem);
 
